@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charet="utf-8">
+  <title>Notes Sharing Platform </title>
+  <style>
+    body, html{
+    height: 100%;
+    width: 100%;
+    background-image: url("body.jpg");
+    margin-top: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+    #body{
+    margin: 0;
+    margin-top:0;
+    font-family: georgia;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+    #frm{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    font-family: georgia;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+    #menu{
+    font-size: 20px;
+    font-family: georgia;
+    color: white;
+    border-style:solid;
+    background-color: grey;
+    border-color:yellow;
+    border-radius:10px;
+    padding:10px;
+    display: inline;
+    letter-spacing: 2px;
+  }
+    #menu2{
+    font-size: 20px;font-family: georgia;
+    color:white;
+    border-style:solid;
+    background-color:yellow;
+    border-color:yellow;
+    border-radius:10px;
+    padding:10px;
+    display: inline;
+    letter-spacing: 2px;
+    animation-name: lm;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  #bar{
+    display: flex;
+    font-family: georgia;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    color:yellow;
+    background-image: url("bar.jpg");
+    padding:15px;
+    margin: 0;
+  }
+    #bar > div{
+    margin: 5px;
+  }
+    #menu:hover{
+    font-family: georgia;
+    background-color:black;
+    font-style: oblique;
+    letter-spacing: 5px;
+  }
+    #menu2:hover{
+    background-color:black;
+    font-style: oblique;
+    letter-spacing: 5px;
+  }
+    @keyframes lm{
+    0%{background-color:yellow;color:indigo;}
+    50%{background-color:rgb(181, 231, 43);color:black;}
+    100%{background-color:yellow;color:indigo;}
+  }
+    #landing{
+   margin-left: 20px;
+   margin-bottom: 20px;
+   float:left;
+   border-width: 5px;
+   border-style: solid;
+   border-radius: 3px;
+   border-color:yellow;
+   padding: 5px;
+   height: 80%;
+   width: 40%;
+    }
+    img{
+    width:100%;
+    height:100%;
+  }
+    #lp2{font-family: georgia;
+    width: 40%;
+    margin-top: 0px;
+    margin-left: 100px;
+    float:right;
+    border-color:brown;
+    padding: 8px;
+    text-align: center;
+    color:black;
+    font-weight: bolder;
+    }
+    #forms{font-family: georgia;
+    color:black;
+    width:50%;
+    background-color: rgba(151, 235, 193, 0.527);
+    margin:auto;
+    font-weight: bolder;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color:black;
+    padding:50px;
+  }
+    #forms2{font-family: georgia;
+    color:black;
+    width:40%;
+    background-color: rgba(151, 235, 193, 0.527);
+    margin:auto;
+    font-weight: bolder;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    flex-wrap: wrap;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color:black;
+    padding:20px;
+  }
+    #heading{font-family: georgia;
+  border-radius: 30px;
+  border-color: yellow;
+  border-style: solid;
+  background-color: grey;
+  height: 80px;
+  width:350px;
+  margin:auto;
+  padding: 5px;
+  animation-name: lm;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  letter-spacing: 5px;
+  justify-content: center;
+  text-align: center;
+  border-width: 5px;
+}
+    #lheading{font-family: georgia;
+  color:black;
+  margin-bottom:30px;
+
+  padding: 5px;
+
+  letter-spacing: 5px;
+  justify-content: center;
+  text-align: center;
+  border-width: 5px;
+}
+    #footer{ background-color: rgba(150, 180, 250, 0.8);
+  font-family: georgia;
+  color: Black;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  padding: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+
+}
+    a{
+    text-decoration: none;
+    color:white;
+    }
+    a:active{
+      font-size:1.5em;
+      background-color:black;
+    }
+    a:hover{
+      color:teal;
+}
+    #bottom{
+    visibility: hidden;
+    }
+    #mid{
+  visibility: hidden;
+}
+    #top{
+  visibility: hidden;
+}
+    .button{
+  font-family: georgia;
+  color:white;
+  font-size:25px;
+  background-color:Dodgerblue;
+  text-align: center;
+  padding: 5px;
+
+  border-radius: 10px;
+
+
+}
+  </style>
+ </head>
+
+
+
+
+<body><section>
+  <div id="top"></div>
+<div id="body">
+  <div id="bar"><b style="float:left;">Companion, A Notes Sharing Platform</b>
+
+      <div><a href="#top"><div id="menu">Home</div></a></div>
+      <div><a href="#top"><div id="menu">Vision</div></a></div>
+      <div><a href="https://google.com"><div id="menu">About Us</div></a></div>
+      <div><a href="#bottom"><div id="menu">Contact Us</div></a></div>
+      <div><a href="#mid"><div id="menu2">Sign Up</div></a></div>
+      <div><a href="#lheading"><div id="menu">Log In</div></a></div>
+
+    </div>
+
+  <div id="landing">
+        <img src="landing.jfif">
+      </div>
+      <div id="lp2">
+            <h1><b><i><u>Welcome to Companion</u></i></b></h1>
+                <h1> What is Companion?</h1>
+                  <h2>Built For Students......</h2>
+                  We're building a better place on internet for students: an ad-free,open platform<br>
+                  This is a place where you can share your college notes or assignment ideas.
+                    With your friends, You can also create groups to have a place to discuss your
+                    doubts  or complete assignments with company of your best friends.
+                    <h2>Customized For You...</h2><br>
+                      Follow and Join Groups of subjects, you care most.Get latest delivered to your homepage and inbox.
+                      <br>
+                      <div id="mid"></div>
+      </div>
+</div></section><section>
+<div id="frm">
+
+  <div id="heading"><h1><b><i>Sign Up Here>>></i></b></h1></div>
+  <div id="forms">
+    <form  action="index.html" method="post">
+    <div><label for="username">Enter Your Username </label><input id="username" type="text" placeholder="Username" required></div>
+    <div><label for="email">Enter Your E-mail ID </label><input id="email" type="email"placeholder="Email" required></div>
+    <div><label for="age">Enter Your Date of Birth </label><input id="age" type="date" required></div>
+    <div><label for="gender">Gender : </label><br><label for="gender">Male</label><input id="Male" type="radio" name="a"></div>
+    <div><label for="gender">Female</label><input id="Female" type="radio" name="a"></div>
+    <div><label for="gender">Other</label><input id="other" type="radio" name="a"></div>
+    <div><label for="identity">You are a  </label><select required><option>Teacher</option><option>Student</option></select></div>
+    <div><label for="password">Enter Password </label><span><input id="pass" type="password" placeholder="password" required></span></div>
+    <div><input type="checkbox"  required >I have read all terms of services.</div>
+    <br><center><div><input type="submit" value="Sign Up" class="button"></div></center>
+      </form>
+  </div>
+</div></section><section>
+<div id="frm">
+    <div id="forms2"><center>
+      <div id="lheading"><h1><b><i>Log In</i></b></h1></div>
+      <form  action="index.html" method="post">
+      <div><label for="username">Enter Your Username </label><input id="username" type="text" placeholder="Username" required></div>
+      <br><div><label for="password">Enter Password </label><span><input id="pass" type="password" placeholder="password" required></span></div>
+      <br><div><input type="submit" value="Log In" class="button" ></div>
+    </form></center>
+  </div>
+</div></section><section>
+<div id="footer">
+  <div><h1><b> Companion</b></h1>
+  <h3>We are your constant Companion</h3></div>
+  <div>Explore
+       <a href="#top"><div>Home</div></a>
+       <a href="#top"><div>Vision</div></a>
+       <a href="https://www.google.com"><div>About Us</div></a>
+       <a href="https://www.gmail.com"><div>Contact Us</div></a>
+   </div>
+   <div>Follow Us
+        <a href="https://Instagram.com"><div>Instagram</div></a>
+        <a href="https://Twitter.com"><div>Twitter</div></a>
+        <a href="https://linkedin.com"><div>LinkedIn</div></a>
+        <a href="https://facebook.com"><div>Facebook</div></a>
+    </div>
+    <div >Legal
+         <a href="https://www.google.com"><div>Terms</div></a>
+        <a href="https://www.google.com"> <div>Privacy</div></a>
+         <a href="https://www.google.com"><div>Copyright</div></a>
+     </div>
+     <div>Join Us
+          <a href="#mid"><div>Sign Up</div></a>
+          <a href="#lheading"><div>Log In</div></a>
+      </div>
+      <div id="bottom"></div>
+</section>
+
+</div>
+</body>
+</html>
